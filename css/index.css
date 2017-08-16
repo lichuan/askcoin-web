@@ -87,12 +87,12 @@ li{list-style-type: none;}
 #faq dl dt{ font-size:0.14rem; margin-bottom:0.1rem;}	
 #faq dl dd{ font-size:0.13rem;}	
 .foot{ text-align:center; padding:0.1rem 0;}
-.nesw_foot{ background-color:#000; color:#fff;}
-.nesw_body{ width:70%; margin:auto; padding:0.2rem 0;}
-.nesw_body p{margin-bottom: 0.2rem;text-indent: 0.2rem;}
-.nesw_body p img{ text-align:center; max-width:100%;}
-.nesw_body .nesw_title{margin-bottom: 0.3rem;border-bottom: 1px solid #ddd;padding-bottom:0.1rem;}
-.nesw_body .nesw_title span {margin-top: 20px;font: 15px/1 Arial, "Sim sun";color: #888;}
+.news_foot{ background-color:#000; color:#fff;}
+.news_body{ width:70%; margin:auto; padding:0.2rem 0;}
+.news_body p{margin-bottom: 0.2rem;text-indent: 0.2rem;}
+.news_body p img{ text-align:center; max-width:100%;}
+.news_body .news_title{margin-bottom: 0.3rem;border-bottom: 1px solid #ddd;padding-bottom:0.1rem;}
+.news_body .news_title span {margin-top: 20px;font: 15px/1 Arial, "Sim sun";color: #888;}
 	
 @media (max-width: 1440px){
 .container-fluid{ width:90%;padding:inherit;}
@@ -120,7 +120,7 @@ li{list-style-type: none;}
 .community .community_body .community_left,.community .community_body .community_right,#faq{ width:90%;float:none;}
 #roadmap img{ width:auto;height:100%;}
 #download ul li{ width:50%; height:1.5rem;}
-.nesw_body{ width:95%;padding: 0;}
-.nesw_body p {text-indent: 0;}
+.news_body{ width:95%;padding: 0;}
+.news_body p {text-indent: 0;}
 
 }
