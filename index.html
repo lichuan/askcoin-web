@@ -1,302 +1,116 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>AskCoin is a cryptocurrency for real-time Q&A</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
-	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/swiper.min.css">
-	<link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
-    <link rel="stylesheet" type="text/css" href="css/owl.theme.css" />
-    <link rel="icon" href="/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="Font-Awesome-3.2.1/css/font-awesome.css">
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/swiper.min.js"></script>
-	<script src="js/owl.carousel.js"></script>
-	<script>
-      (function() {
-        var baseFontSize = 100;
-        var baseWidth = 375;
-        var clientWidth = document.documentElement.clientWidth || window.innerWidth;
-        var innerWidth = Math.max(Math.min(clientWidth, 480), 360);
-    
-        var rem = 100;
-        if (innerWidth >= 414) {
-          rem = Math.floor(innerWidth / baseWidth * baseFontSize * 0.98);
-        } else {
-          rem = Math.floor(innerWidth / baseWidth * baseFontSize);
-        }
-    
-        document.querySelector('html').style.fontSize = rem + 'px';
-      }());
-    </script>
-</head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+    <head>
+        <title>Test Page for the Nginx HTTP Server on Fedora</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <style type="text/css">
+            /*<![CDATA[*/
+            body {
+                background-color: #fff;
+                color: #000;
+                font-size: 0.9em;
+                font-family: sans-serif,helvetica;
+                margin: 0;
+                padding: 0;
+            }
+            :link {
+                color: #c00;
+            }
+            :visited {
+                color: #c00;
+            }
+            a:hover {
+                color: #f50;
+            }
+            h1 {
+                text-align: center;
+                margin: 0;
+                padding: 0.6em 2em 0.4em;
+                background-color: #294172;
+                color: #fff;
+                font-weight: normal;
+                font-size: 1.75em;
+                border-bottom: 2px solid #000;
+            }
+            h1 strong {
+                font-weight: bold;
+                font-size: 1.5em;
+            }
+            h2 {
+                text-align: center;
+                background-color: #3C6EB4;
+                font-size: 1.1em;
+                font-weight: bold;
+                color: #fff;
+                margin: 0;
+                padding: 0.5em;
+                border-bottom: 2px solid #294172;
+            }
+            hr {
+                display: none;
+            }
+            .content {
+                padding: 1em 5em;
+            }
+            .alert {
+                border: 2px solid #000;
+            }
+
+            img {
+                border: 2px solid #fff;
+                padding: 2px;
+                margin: 2px;
+            }
+            a:hover img {
+                border: 2px solid #294172;
+            }
+            .logos {
+                margin: 1em;
+                text-align: center;
+            }
+            /*]]>*/
+        </style>
+    </head>
+
     <body>
-    
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container-fluid"> 
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#example-navbar-collapse">
-                <span class="sr-only">切换导航</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/"><img src="images/logo1.png"></a>
-        </div>
-        <div class="collapse navbar-collapse" id="example-navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="#news">NEWS</a></li>
-                <li><a href="#download">DOWNLOAD</a></li>
-                <li><a href="#roadmap">ROADMAP</a></li>
-                <!-- <li><a href="#community">COMMUNITY</a></li> -->
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="http://cryptofresh.com/a/ASKCOIN">EXPLORER</a></li>
-                <li><a href="#team">TEAM</a></li>
-            </ul>
-        </div>
-        </div>
-    </nav>
-    
-<div class="banner_bj">   
-    <div class="banner">
-            <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><span><h3>ASKCOIN</h3><P class="xmbt">AskCoin is a cryptocurrency for real-time Q&A (Question and Answer)</P></span></div>
-            <div class="swiper-slide"><span><img src="images/banner_x1.png"><P>Askcoin app ui effect 1</P></span></div>
-            <div class="swiper-slide"><span><img src="images/banner_x2.png"><P>Askcoin app ui effect 2</P></span></div>
-            <div class="swiper-slide"><span><img src="images/banner_x3.png"><P>Askcoin app ui effect 3</P></span></div>
-            <div class="swiper-slide"><span><img src="images/banner_x4.png"><P>Askcoin app ui effect 4</P></span></div>
-            <div class="swiper-slide"><span><img src="images/banner_x5.png"><P>Askcoin app ui effect 5</P></span></div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-    </div>
-    <script>
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-		loop : true,
-		autoplay : 3000,
-    });
-    </script> 
-    <div class="banner_a">
-    	<a class="button-standard" href="#noticr"><span>INTRODUCTION</span></a>
-    	<a class="button-standard" href="/whitepaper_en.pdf"><span>WHITEPAPER</span></a>
-    	<a class="button-standard" href="/whitepaper_cn.pdf"><span>中文版白皮书</span></a>
-    	<!-- <a class="button-standard" href="#"><i class="icon-download-alt icon-2x"></i><span class="banner_span">DOWNLOAD WALLET</span></a> -->
-    </div>
-    </div>
-    <div class="clear"></div>
-</div>
+        <h1>Welcome to <strong>nginx</strong> on Fedora!</h1>
 
-<div class="common_gg">
-    <div class="news" name="noticr">
-        <h3 id="noticr">INTRODUCTION</h3>
-	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;With the rapid development of the times of Internet information, the ways people get knowledge and information are increasingly diversified and convenient; in real life, when we have doubts and hence need help from other people, you’ll find, in most of the time, that people around you actually cannot timely answer your confusions/doubts, hence we’ll divert our attention to the Internet - the biggest open information platform - to seek help. Blogs, microblogs and all sorts of online forums are all good places where perception, knowledge and emotion can be exchanged among people; also, various group chat software/apps that exist can bring us experience of nearly real-time communication. In using the above various communication tools, however, we’ve also detected some problems:
-<em>
-<b>  
-<br>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Such ways of communication as blog, microblog and forum are not completely real-time because the posters have to wait for quite a long time before they get replies from other people.
-<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Group chat tools can bring us experience of nearly real-time communication, but group chat is after all not a separate discussion tailored to a question raised by someone but filled with miscellaneous chats that can easily drown the messages of those who need help and answers to their doubts.
-<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. People lack motivation and enthusiasm to participate in and reply the questions and doubts of other people.
-</b>
-</em>
-</p>
-<br>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The emergence of the blockchain technology brings us new ways of thinking, new economic models and brand-new definitions of “value”. In response to the foregoing phenomena and in combination with the advantages of the blockchain technology, the AskCoin Project comes into being.
-The distributional consensus algorithm DPOS, which is the fastest in the cryptocurrency industry, is adopted for AskCoin. The DPOS algorithm, having been sufficiently verified in such projects as BitShares, Steemit, Lisk and etc., can realize second(s)-level block confirmation and thereby ensure the real-time nature of the Q&A platform. Moreover, AskCoin itself is a kind of cryptocurrency embedded in the system that drives the whole Q&A platform, and it stands for value too. As long as you are willing to help others answer their doubts, the askers’ll reward you; also, you may only reward certain replies that satisfy you separately, this is an innovation of AskCoin.</p>
-    </div>
-    <div class="affiche">
-        <h3 id="news">NEWS</h3>
-        <div class="row">
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                    <a href="/news/20170817.html" class="news_bot_li_top ">
-                        <span>Askcoin ICO in BitShares DEX</span>
-                        <i>he total size of issue of AskCoin is 10 billion coins, during the Initial Coin Offering (ICO), 1.0 billion coins will be offered at a price of CNY0.01 (1 Fen) to the market.</i>
-                    </a>  
-                    <span class="news_bot_li_bot"><span>2017</span><i>08-17</i></span> 
-                </div>         
+        <div class="content">
+            <p>This page is used to test the proper operation of the
+            <strong>nginx</strong> HTTP server after it has been
+            installed. If you can read this page, it means that the
+            web server installed at this site is working
+            properly.</p>
+
+            <div class="alert">
+                <h2>Website Administrator</h2>
+                <div class="content">
+                    <p>This is the default <tt>index.html</tt> page that
+                    is distributed with <strong>nginx</strong> on
+                    Fedora.  It is located in
+                    <tt>/usr/share/nginx/html</tt>.</p>
+
+                    <p>You should now put your content in a location of
+                    your choice and edit the <tt>root</tt> configuration
+                    directive in the <strong>nginx</strong>
+                    configuration file
+                    <tt>/etc/nginx/nginx.conf</tt>.</p>
+
+                </div>
             </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                    <a href="/news/20170815.html" class="news_bot_li_top ">
-                        <span>$47 Million in Bitcoin: Ukrainian Lawmakers Declare Financial Holdings.</span>
-                        <i>Three Ukrainian lawmakers have declared holding a combined $47 million in bitcoin following mandatory disclosures requiring members of parliament to</i>
-                    </a>  
-                    <span class="news_bot_li_bot"><span>2017</span><i>08-15</i></span> 
-                </div>         
+
+            <div class="logos">
+                <a href="http://nginx.net/"><img
+                    src="nginx-logo.png" 
+                    alt="[ Powered by nginx ]"
+                    width="121" height="32" /></a>
+
+                <a href="http://fedoraproject.org/"><img 
+                    src="poweredby.png" 
+                    alt="[ Powered by Fedora ]" 
+                    width="88" height="31" /></a>
             </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                    <a href="/news/20170810.html" class="news_bot_li_top ">
-                        <span>Russia Begins Work on Developing Blockchain Standards</span>
-                        <i>Russia’s national standards authority is working toward the standardization of blockchain and distributed ledger technologies.</i>
-                    </a>  
-                    <span class="news_bot_li_bot"><span>2017</span><i>08-10</i></span> 
-                </div>         
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                    <a href="/news/20170807.html" class="news_bot_li_top ">
-                        <span>What The Bitcoin Cash “BCC” Hard Fork Means for Blockchain Wallet Users</span>
-                        <i>At Blockchain, we are focused on creating products that empower you to have ultimate control and flexibility in managing your money.</i>
-                    </a>  
-                    <span class="news_bot_li_bot"><span>2017</span><i>08-07</i></span> 
-                </div>         
-            </div>
-        </div>    
-    </div>
-    <div class="clear"></div>
-</div>
-
-<!-- download -->
-<div id="download">
-	<ul>
-    	<li><a href="/whitepaper_en.pdf"><i class="icon-book icon-5x"></i><span>Download Whitepaper</span></a></li>
-    	<li><a href="https://github.com/lichuan/askcoin-client"><i class="icon-github-alt icon-5x"></i><span>Github Source</span></a></li>
-    	<li><a href="https://github.com/lichuan/askcoin"><i class="icon-sitemap icon-5x"></i><span>Full Node</span></a></li>
-    	<li><a href="https://steemit.com/@askcoin"><i class="icon-user icon-5x"></i><span>Social Media</span></a></li>
-        <div class="clear"></div>
-    </ul>
-    <div class="clear"></div>
-</div>
-
-<!-- roadmap -->
-<div id="roadmap">
-    <div class="news" name="roadmap">
-        <h3 id="noticr">ROADMAP</h3>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By the end of 2017, the Askcoin blockchain network will be officially launched, and mobile app will be officially launched; In 2018, our focus will be on the continuous improvement of product functions and the development of voting, election, monitoring and other functions on the block chain.</p>
-    </div>
-</div>
-
-<!-- community -->
-<!-- <div class="community" id="community"> -->
-<!-- 	<div class="community_body"> -->
-<!-- 	<div class="community_left"> -->
-<!--     	<h3>COMMUNITY</h3> -->
-<!--         <p>ignatum is purely a community driven project where members take part as a team to discuss current and future developments. Every member in the community has a voice and are free to give suggestions and contribute to the current situation and future development of the project. Just like any other community project, the hardest part is to materialize the ideas and suggestions and that is where the community leaders come in. Community leaders are the members who contribute to the core development of services and the project design itself. The community leaders are very vocal in the project because they believe strongly in the success of the project.</p> -->
-<!--     </div> -->
-<!-- 	<div class="community_right"> -->
-<!--     	<dl> -->
-<!--         	<dt>1.community</dt> -->
-<!--             <dd>All members present in official Discord and Telegram channels have been kind enough to come up with ideas and suggestion based on their real life professional and personal experiences. Signatum community has people from all walks of life. Whether its designing, programming, IT infrastructure, general management; they are active and contribute their best efforts.</dd> -->
-<!--         </dl> -->
-<!--     	<dl> -->
-<!--         	<dt>2.community</dt> -->
-<!--             <dd>All members present in official Discord and Telegram channels have been kind enough to come up with ideas and suggestion based on their real life professional and personal experiences. Signatum community has people from all walks of life. Whether its designing, programming, IT infrastructure, general management; they are active and contribute their best efforts.</dd> -->
-<!--         </dl> -->
-<!--     	<dl> -->
-<!--         	<dt>3.community</dt> -->
-<!--             <dd>All members present in official Discord and Telegram channels have been kind enough to come up with ideas and suggestion based on their real life professional and personal experiences. Signatum community has people from all walks of life. Whether its designing, programming, IT infrastructure, general management; they are active and contribute their best efforts.</dd> -->
-<!--         </dl> -->
-<!--     </div> -->
-<!--     </div> -->
-<!--     <div class="clear"></div> -->
-<!-- </div> -->
-
-<!-- faq -->
-<div id="faq">
-	<h3>Frequently<br>Asked<br>Questions</h3>
-    <dl>
-    	<dt>Question: How many members are there in your team?</dt>
-    	<dd>A: There are 6 people in our project team at the moment, Our members have years of experience in the industry.</dd>
-    </dl>
-    <dl>
-    	<dt>Question: In the future, do you plan to apply for Askcoin to other exchanges?</dt>
-    	<dd>A: Of course, our goal is to make Askcoin listed on as many exchanges as possible.</dd>
-    </dl>
-    <dl>
-    	<dt>Question: What consensus algorithm does Askcoin adopt?</dt>
-    	<dd>A: DPOS.</dd>
-    </dl>
-    <dl>
-    	<dt>Question: How long is the confirmation time for Askcoin blocks?</dt>
-    	<dd>A: About 2 seconds.</dd>
-    </dl>
-    <dl>
-    	<dt>Question: Does Askcoin app support both IOS and Android?</dt>
-    	<dd>A: Yes.</dd>
-    </dl>
-    <dl>
-    	<dt>Question: Is Askcoin fully open source?</dt>
-    	<dd>A: Yes, its source code will be submitted to the GitHub website.</dd>
-    </dl>
-    <div class="clear"></div>
-</div>
-
-<!-- team -->
-<section class="testimonials-section sec-padd" id="team">
-    <div class="container">
-		<div class="section-title center">
-			<h2>TEAM MEMBER</h2>
-			<div id="devices-demo" class="owl-inside owl-carousel owl-theme owl-loaded">
-				<div class="article">
-                    <dl>
-                    	<dt><p><img src="images/team/2.jpg"></p><span>Chuan Li</span></dt>
-                        <dd>Project initiator & back-end architect, with over 10 years’ experience in system-level C++ development, proficient in development of distributional network framework.</dd>
-                    </dl>
-                </div>
-				<div class="article">
-                    <dl>
-                    	<dt><p><img src="images/team/4.jpg"></p><span>Bruce Guo</span></dt>
-                        <dd>Business manager, senior financial/legal translator, proficient in English and good at Russian.</dd>
-                    </dl>
-                </div>
-				<div class="article">
-                    <dl>
-                    	<dt><p><img src="images/team/3.jpg"></p><span>Gu Shui</span></dt>
-                        <dd>Front-end development engineer, proficient in such technologies as nodejs, react and etc.</dd>
-                    </dl>
-                </div>
-				<div class="article">
-                    <dl>
-                    	<dt><p><img src="images/team/1.jpg"></p><span>Lin Wei</span></dt>
-                        <dd>Front & back-end development engineer, full-stack engineer.</dd>
-                    </dl>
-                </div>
-				<div class="article">
-                    <dl>
-                    	<dt><p><img src="images/team/5.jpg"></p><span>Cheng Li</span></dt>
-                        <dd>Front-end architect, with many years’ experience in mobile Internet development.</dd>
-                    </dl>
-                </div>
-				<div class="article">
-                    <dl>
-                    	<dt><p><img src="images/team/6.jpg"></p><span>Xuan Wang</span></dt>
-                        <dd>Art designer with many years’ experience in mobile-end UI design.</dd>
-                    </dl>
-                </div>
-			</div>
-		</div>
-	</div>
-</section>
-<script>
-$('#devices-demo').owlCarousel({
-	items: 1,
-	loop: true,
-	margin: 80,
-	lazyLoad: true,
-	merge: true, 
-	video: true,
-	nav: true,
-	dots: false,
-	responsive:{	
-		480:{items:2},
-		678:{items:2},
-		1220:{items:3},
-		1920:{items:3}
-	}
-});
-</script>
-<div class="foot">
-	<p>Copyright © Askcoin</p>
-</div>
-
-</body>
+        </div>
+    </body>
 </html>
